@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3587d4;
+}
+
+.titulo-1 {
+    color: rgb(4, 75, 72);
+    font-size: 36px; /* Cambié a 36px */
+    margin-left: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #279c83;
+    padding-top: 120px;
+}
+
+.logo img {
+    width: 300px; 
+    height: auto;
+    position: absolute; /* Posiciona el logo de forma absoluta respecto al contenedor */
+    /* top: 50%; Desplaza el logo 50% hacia abajo */
+    top: 60px;
+    left: 50%; /* Desplaza el logo 50% hacia la derecha */
+    transform: translate(-50%, -50%); /* Compensa el desplazamiento del logo centrado */
+}
+
+/* Ajuste de la clase container para el Menu */
+.container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; /* Alinea verticalmente los iconos */
+    justify-content: flex-end; 
+    padding: 20px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    background-color:   #279c83;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente los elementos dentro del ul */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
+}
+
+.menu li {
+    padding: 0 20px; /* Espaciado horizontal entre elementos */
+    border-right: 1px solid #fff; /* Línea divisoria entre elementos */
+}
+
+.menu li:last-child {
+    border-right: none; /* Sin línea divisoria en el último elemento */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(4, 75, 72);;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    font-weight: 700;
+    display: block;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*header-contenido*/
+.header {
+    width: 100%;
+    background-color: #0085a4; /* Color de fondo del header */
+    text-align: center; /* Centrar texto horizontalmente */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    font-size: 120%;
+    line-height: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.header-title {
+    color: white; /* Color del texto */
+    font-size: 2em; /* Tamaño de la fuente */
+    margin: 0; /* Eliminar márgenes por defecto */
+    
+}
+
+/* Informacion Container Mision */
+.container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos dentro de la sección */
+}
+
+.image-section {
+      /* Ajustar el tamaño de las imágenes */
+      margin-left: 70px;
+      margin-right: 95px;
+      margin-top: 60px;
+      margin-bottom: 50px;
+      flex: 0 0 40%; /* La imagen ocupara el 30% del espacio de la caja flex */
+}
+
+.image-section img {
+    width: 100%; /* La imagen ocupa el 100% del espacio de su sección */
+    height: auto; /* Mantener proporciones de la imagen */
+}
+
+.text-section {
+ 
+    color: white;
+    padding: 20px;
+    margin-left: 0px; /* Espacio reducido entre texto e imagen */
+    margin-right: 80px;
+    flex: 1; /* La sección de texto ocupa el resto del espacio disponible */
+}
+
+.text-section h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 35px;
+    line-height: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text-section p {
+    /* Estilos adicionales para el texto del párrafo */
+    font-size: 16px; /* Tamaño de texto ajustado */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/* Informacion Vision */
+.container-2 {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos dentro de la sección */
+}
+
+.image-section-2 {
+    /* Ajustar el tamaño de las imágenes */
+    margin-left: 0px;
+    margin-right: 95px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    flex: 0 0 40%; /* La imagen ocupara el 30% del espacio de la caja flex */
+}
+
+.image-section-2 img {
+    width: 100%; /* La imagen ocupa el 100% del espacio de su sección */
+    height: auto; /* Mantener proporciones de la imagen */
+}
+
+.text-section-2 {
+
+    color: white;
+    padding: 20px;
+    margin-left: 95px; /* Espacio reducido entre texto e imagen */
+    margin-right: 90px;
+    flex: 1; /* La sección de texto ocupa el resto del espacio disponible */
+}
+
+.text-section-2 h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 35px;
+    line-height: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text-section-2  p {
+    /* Estilos adicionales para el texto del párrafo */
+    font-size: 16px; /* Tamaño de texto ajustado */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

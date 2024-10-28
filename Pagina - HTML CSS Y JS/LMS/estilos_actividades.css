@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efb81d;
+}
+
+.titulo-1 {
+    color: rgb(4, 75, 72);
+    font-size: 36px; /* Cambié a 36px */
+    margin-left: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #279c83;
+    padding-top: 120px;
+}
+
+.logo img {
+    width: 300px; 
+    height: auto;
+    position: absolute; /* Posiciona el logo de forma absoluta respecto al contenedor */
+    /* top: 50%; Desplaza el logo 50% hacia abajo */
+    top: 60px;
+    left: 50%; /* Desplaza el logo 50% hacia la derecha */
+    transform: translate(-50%, -50%); /* Compensa el desplazamiento del logo centrado */
+}
+
+/* Ajuste de la clase container para el Menu */
+.container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; /* Alinea verticalmente los iconos */
+    justify-content: flex-end; 
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    background-color: #279c83;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente los elementos dentro del ul */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
+}
+
+.menu li {
+    padding: 0 20px; /* Espaciado horizontal entre elementos */
+    border-right: 1px solid #fff; /* Línea divisoria entre elementos */
+}
+
+.menu li:last-child {
+    border-right: none; /* Sin línea divisoria en el último elemento */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(4, 75, 72);
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    font-weight: 700;
+    display: block;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+/*header-contenido*/
+.header {
+    width: 100%;
+    background-color: #0085a4; /* Color de fondo del header */
+    text-align: center; /* Centrar texto horizontalmente */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    font-size: 120%;
+    line-height: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.header-title {
+    color: white; /* Color del texto */
+    font-size: 2em; /* Tamaño de la fuente */
+    margin: 0; /* Eliminar márgenes por defecto */
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Columna Natacion*/
+.column {
+    background-color: #135cb1;
+    border-radius: 8px;
+    padding: 15px;
+    width: 30%;
+    margin: 10px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.column:hover {
+    transform: scale(1.02);
+}
+
+.column p {
+    margin-top: 80px; /* Ajusta esto para aumentar o disminuir el margen superior */
+    margin-bottom: 10px; /* Ajusta esto para aumentar o disminuir el margen inferior */
+    text-align: center;
+}
+
+/* Columna Karate*/
+.column-2 {
+    background-color:  #135cb1;
+    border-radius: 8px;
+    padding: 15px;
+    width: 30%;
+    margin: 10px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.column-2:hover {
+    transform: scale(1.02);
+}
+
+.column-2 p {
+    margin-top: 80px; /* Ajusta esto para aumentar o disminuir el margen superior */
+    margin-bottom: 10px; /* Ajusta esto para aumentar o disminuir el margen inferior */
+    text-align: center;
+}
+
+/* Columna Danza*/
+.column-3 {
+    background-color: #135cb1;
+    border-radius: 8px;
+    padding: 15px;
+    width: 30%;
+    margin: 10px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.column-3:hover {
+    transform: scale(1.02);
+}
+
+.column-3 p {
+    margin-top: 80px; /* Ajusta esto para aumentar o disminuir el margen superior */
+    margin-bottom: 10px; /* Ajusta esto para aumentar o disminuir el margen inferior */
+    text-align: center;
+}
+
+/* Imagen Container */
+.image-container-1  {
+    width: 300px; /* Ajusta este valor según el tamaño que desees */
+    height: auto; /* Mantiene la proporción de la imagen */
+    padding-left: 10px;
+}
+
+.image-container-2  {
+    width: 300px; /* Ajusta este valor según el tamaño que desees */
+    height: auto; /* Mantiene la proporción de la imagen */
+    padding-left: 30px;
+}
+
+.image-container-3  {
+    width: 300px; /* Ajusta este valor según el tamaño que desees */
+    height: auto; /* Mantiene la proporción de la imagen */
+    padding-left: 25px;
+}
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Aumenta la altura del carrusel */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carrusel img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 8px;
+    z-index: 0;
+    object-fit: cover; /* Asegura que la imagen llene el espacio correctamente */
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1; /* Asegúrate de que los botones estén por encima de la imagen */
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#prevBtnNatacion {
+    left: 10px; /* Ajusta el espacio a la izquierda */
+}
+
+#nextBtnNatacion {
+    right: 10px; /* Ajusta el espacio a la derecha */
+}
+
+#prevBtnKarate {
+    left: 10px; /* Ajusta el espacio a la izquierda */
+}
+
+#nextBtnKarate {
+    right: 10px; /* Ajusta el espacio a la derecha */
+}
+
+#prevBtnDanza {
+    left: 10px; /* Ajusta el espacio a la izquierda */
+}
+
+#nextBtnDanza {
+    right: 10px; /* Ajusta el espacio a la derecha */
+}
